@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{ height: 800px;width: 1009px;background-color: antiquewhite;border: double 3px purple;}
+        *{margin: auto; padding:0px;}
+        nav{height: 47px; width:1006px; background-color:rgb(196,147,84);padding: 3px;}
+        header{height: 150px; width: 1012px;background-color:rgb(39, 170, 39);}
+        .content{height: 400px; width: 1012px;background-color: rgb(198, 224, 151);}
+        aside{height: 100%; width: 60%; background-color: rgb(220, 190, 10); float: right;}
+        section{height: 100%; width: 60%; float: left;}
+        #frm{height: 80%;width:70%;float:left; border-left: soild 2px salmon;float: center;}
+        .lbl{float: left; width: 30%;}
+        .inp{float:left; width: 40%;}
+        .clear{clear:both;}
+    </style>
+</head>
+<body>
+   <div>
+        <nav>Menu</nav>
+        <header>Trang chủ</header>
+        <div class="content">
+            <aside>
+                <caption> FORM THONG TIN</caption>
+                <fieldset>
+                    <legend>Thông tin đăng ký</legend>
+                    <div class="lbl">
+                        <label for="lblMA">Mã số Sinh Viên</label><br><br>
+                        <label for="lblHT">Họ Tên</label><br><br>
+                        <label for="lblGT">Giới tính</label><br><br>
+                    </div>
+                     <div clas="inp">
+                        <input type="text" name="txtMA" placeholder=" Ma Sinh Vien"required> <br><br>
+                        <input type="text" name="txtHT" placeholder=" Ho Ten Sinh Vien"required><br><br>
+                        Nam
+                        <input type="radio" name="chk" id=" chk1" checked value="Nam">Nu
+                        <input type="radio" name="chk" id=" chk2" value="Nu">
+                    </div>
+                    
+                    <div class="clear"></div>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Xóa">
+                </fieldset>
+            </aside>
+            <section>
+                <form action="iuh.edu.vn" method="get" id="frm">
+                    
+                </form>
+            </section>
+
+        </div>
+
+
+
+
+
+   </div> 
+</body>
+</html>
