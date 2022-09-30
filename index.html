@@ -6,26 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .wrapper{ height: 800px;width: 1009px;background-color: antiquewhite;border: double 3px purple;}
+        .wrapper{ height: 800px;width: 1250px;background-color: antiquewhite;border: double 3px purple;}
         *{margin: auto; padding:0px;}
-        nav{height: 47px; width:1006px; background-color:rgb(196,147,84);padding: 3px;}
-        header{height: 150px; width: 1012px;background-color:rgb(39, 170, 39);}
-        .content{height: 400px; width: 1012px;background-color: rgb(198, 224, 151);}
-        aside{height: 100%; width: 60%; background-color: rgb(220, 190, 10); float: right;}
-        section{height: 100%; width: 60%; float: left;}
-        #frm{height: 80%;width:70%;float:left; border-left: soild 2px salmon;float: center;}
+        header{height: 200px; width: 1245px;}
+        .content{height: 600px; width: 1245px;background-color: rgb(198, 224, 151) ;}
+        aside{height: 90%; width: 40%;  background-color: rgb(220, 190, 10); float: center;}
         .lbl{float: left; width: 30%;}
         .inp{float:left; width: 40%;}
         .clear{clear:both;}
+        .menu li{ display: flex; position: absolute;
+             left: 100px; font-size: 18px; 
+             border-radius: 30px; border: solid 3px rgb(196, 20, 93);
+             text-shadow: 2px 2px #cf3333;list-style-type: none; padding: 10px;}
+             .menu li:hover{ background-color: blue; color: #cf3333;}
+       li a{ text-decoration: none;}
+        .menu li:nth-child(4){ left: 500px; top: 50px;} 
+        .menu li:nth-child(3){ left: 350px; top: 50px;} 
+        .menu li:nth-child(2){ left: 230px; top: 50px;} 
+        .menu li:nth-child(1){ left: 130px; top: 50px;} 
+        span{width: 200px;height: 80%; float: right; line-height: 150px;}
     </style>
 </head>
 <body>
-   <div>
-        <nav>Menu</nav>
-        <header>Trang chủ</header>
+    <div class="wrapper">
+        <nav> 
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Help</a></li>
+             
+            </ul>
+            <span>
+                <form action="Tìm Kiếm" method="get">
+                    <input type="text" placeholder="search">
+                    <button>go</button>
+                </form>
+            </span>
+        </nav>
+        <header></header>
         <div class="content">
             <aside>
-                <caption> FORM THONG TIN</caption>
                 <fieldset>
                     <legend>Thông tin đăng ký</legend>
                     <div class="lbl">
@@ -43,15 +64,10 @@
                     
                     <div class="clear"></div>
                     <input type="submit" value="Đăng ký">
-                    <input type="reset" value="Xóa">
+                    <input type="reset" value="Xóa" >
                 </fieldset>
             </aside>
-            <section>
-                <form action="iuh.edu.vn" method="get" id="frm">
-                    
-                </form>
-            </section>
-
+            
         </div>
 
 
